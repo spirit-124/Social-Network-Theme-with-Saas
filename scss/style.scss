@@ -1,0 +1,90 @@
+@import "config";
+@import "utility";
+@import "form";
+
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway' sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+ul {
+    list-style: none;
+
+}
+
+img {
+    width: 100%;
+}
+
+// NAVBAR
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 0.7rem 2rem;
+    z-index: 1;
+    width: 100%;
+    border-bottom: solid 1px $primary-color;
+    opacity: 0.9;
+
+    ul {
+        display: flex;
+    }
+
+    a, i{
+        color: #fff;
+        display: flex;
+        padding: 0.45rem;
+        margin:  0 0.25rem;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+// Landing
+
+.landing {
+    position: relative;
+    background: url(../assets/pexels-cottonbro-studio-5473302.jpg) no-repeat center center/cover ;
+    height: 100vh;
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 80%;
+        color: #fff;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .button{
+            a {
+                color: var($primary-color);
+            }
+        }
+
+    }
+}
