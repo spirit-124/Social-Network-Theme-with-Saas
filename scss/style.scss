@@ -172,6 +172,11 @@ img {
                 flex: 7;
                 flex-basis: 70%;
             }
+
+            & > div:last-child {
+                flex: 3;
+                flex-basis: 20%;
+            }
         }
     }
 }

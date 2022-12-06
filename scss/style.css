@@ -247,6 +247,14 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.table th, .table td {
+  padding: 1rem;
+  text-align: left;
+}
+.table th {
+  background-color: #f4f4f4;
+}
+
 .form-group {
   margin: 1.2rem 0;
 }
@@ -414,4 +422,8 @@ img {
 .profile-grid .profile-github .repo > div:first-child {
   flex: 7;
   flex-basis: 70%;
+}
+.profile-grid .profile-github .repo > div:last-child {
+  flex: 3;
+  flex-basis: 20%;
 }/*# sourceMappingURL=style.css.map */
